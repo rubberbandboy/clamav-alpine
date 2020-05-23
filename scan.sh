@@ -33,6 +33,6 @@ clamscan -V
 echo ""
 echo "Scanning $SCANDIR"
 echo ""
-clamscan -r $SCANDIR $@
+clamscan -r --max-filesize=4000M --max-scansize=4000M --bytecode-timeout=190000 $SCANDIR $@
 echo ""
 echo "$( date -I'seconds' ) ClamAV scanning finished"
