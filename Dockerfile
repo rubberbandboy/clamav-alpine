@@ -1,7 +1,7 @@
 FROM alpine:latest
 LABEL maintainer="Travis Quinnelly <tquinnelly@gmail.com>"
 
-RUN apk update && apk add clamav=0.102.1-r0
+RUN apk update && apk add clamav && apk add clamav-unrar && apk add unrar
 
 ENV SCANDIR=/scan
 COPY scan.sh /scan.sh
