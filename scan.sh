@@ -10,7 +10,6 @@ set +e
 freshclam
 FRESHCLAM_EXIT=$?
 set -e
-echo ""
 
 if [[ "$FRESHCLAM_EXIT" -eq "0" ]]; then
     echo "Freshclam updated the DB"
