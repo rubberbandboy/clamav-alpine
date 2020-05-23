@@ -1,6 +1,9 @@
 #!/bin/bash
 
 set -euo pipefail
+echo "Updating ClamAV Scanner versions"
+apk update
+apk upgrade -y
 echo ""
 echo "$( date -I'seconds' ) ClamAV process starting"
 echo ""
